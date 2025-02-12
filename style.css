@@ -682,3 +682,103 @@ textarea {
 .linkes.active {
     animation: slideDown 0.3s ease-in-out;
 }
+
+
+/* Add these CSS rules to your existing styles */
+
+/* Mobile Menu Button Styles */
+#mobile-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+/* Mobile Navigation Styles */
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .linkes {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .linkes.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(49, 17, 17);
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .linkes li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    /* Fix for section1 mobile layout */
+    .section1 {
+        padding-top: 90px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .sec1_text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .sec1_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .sec1_img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* Fix for contact form width */
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Additional fixes for smaller screens */
+@media screen and (max-width: 480px) {
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .button-1,
+    .button-2 {
+        width: 80%;
+        max-width: 250px;
+        margin: 0;
+    }
+}
