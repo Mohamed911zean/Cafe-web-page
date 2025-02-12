@@ -687,7 +687,7 @@ textarea {
 /* Add these CSS rules to your existing styles */
 
 /* Mobile Menu Button Styles */
-#mobile-menu-btn {
+.mobile-menu-btn {
     background: none;
     border: none;
     color: white;
